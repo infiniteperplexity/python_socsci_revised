@@ -1,0 +1,14 @@
+# Python virtual environments
+socsci_venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# VS Code
+.vscode/
+
+# Data files to ignore
+*.dta
+*.csv
+*.pdf
+*.txt

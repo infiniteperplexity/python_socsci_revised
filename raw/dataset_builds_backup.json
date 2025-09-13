@@ -1,0 +1,168 @@
+{
+    "cdf": {},
+    "2024": {
+        "weight": {
+            "source": "V240107b",
+            "type": "float",
+            "valid": {
+                "min": 0
+            }
+        },
+        "age": {
+            "source": "V241458x",
+            "nulls": [-2],
+            "valid": {
+                "min": 0,
+                "max": 120
+            }
+        },
+        "female": {
+            "source": "V241550",
+            "nulls": [3,0,-9],
+            "mapping": {"1":0,"2":1},
+            "valid": [0,1]
+        },
+        "race": {
+            "source": "V241501x",
+            "nulls": [-4,-8,-9],
+            "mapping": {"1":"White","2":"Black","3":"Hispanic","4":"Other","5":"Other","6":"Other"},
+            "type": "str",
+            "valid": ["White","Black","Hispanic","Other"]
+        },
+        "strong_republican": {
+            "source": "V241227x",
+            "mapping": {"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":1},
+            "valid": [0,1]
+        },
+        "republican": {
+            "source": "V241227x",
+            "mapping": {"1":0,"2":0,"3":0,"4":0,"5":0,"6":1,"7":1},
+            "valid": [0,1]
+        },
+        "lean_republican": {
+            "source": "V241227x",
+            "mapping": {"1":0,"2":0,"3":0,"4":0,"5":1,"6":1,"7":1},
+            "valid": [0,1]
+        },
+        "strong_democrat": {
+            "source": "V241227x",
+            "mapping": {"1":1,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0},
+            "valid": [0,1]
+        },
+        "democrat": {
+            "source": "V241227x",
+            "mapping": {"1":1,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0},
+            "valid": [0,1]
+        },
+        "lean_democrat": {
+            "source": "V241227x",
+            "mapping": {"1":1,"2":1,"3":1,"4":0,"5":0,"6":0,"7":0},
+            "valid": [0,1]
+        },
+        "party_3_narrow": {
+            "source": "V241227x",
+            "mapping": {"1":"D","2":"D","3":"I","4":"I","5":"I","6":"R","7":"R"},
+            "type": "str",
+            "valid": ["D","I","R"]
+        },
+        "party_3_broad": {
+            "source": "V241227x",
+            "mapping": {"1":"D","2":"D","3":"D","4":"I","5":"R","6":"R","7":"R"},
+            "type": "str",
+            "valid": ["D","I","R"]
+        },
+        "conservative": {
+            "source": "V241177",
+            "mapping": {"1":1,"2":1,"3":1,"4":0,"5":0,"6":0,"7":0},
+            "valid": [0,1]
+        },
+        "vote_rep_pres": {
+            "source": "V242067",
+            "mapping": {"1":1,"2":0},
+            "valid": [0,1]
+        },
+        "prev_rep_pres": {
+            "source": "V241104",
+            "mapping": {"1":1,"2":0},
+            "valid": [0,1]
+        },
+        "blacks_lazy": {
+            "source": "V242542",
+            "nulls": [-1,-5,-6,-7,-9],
+            "valid": [1,2,3,4,5,6,7]
+        },
+        "therm_blacks": {
+            "source": "V242516",
+            "nulls": [-1,-4,-5,-6,-7,-9,200,998,999],
+            "valid": {
+                "min": 0,
+                "max": 100
+            }
+        },
+        "therm_whites": {
+            "source": "V242518",
+            "nulls": [-1,-4,-5,-6,-7,-9,200,998,999],
+            "valid": {
+                "min": 0,
+                "max": 100
+            }
+        },
+        "therm_trans": {
+            "source": "V242151",
+            "nulls": [-1,-4,-5,-6,-7,-9,200,998,999],
+            "valid": {
+                "min": 0,
+                "max": 100
+            }
+        },
+        "therm_police": {
+            "source": "V242150",
+            "nulls": [-1,-4,-5,-6,-7,-9,200,998,999],
+            "valid": {
+                "min": 0,
+                "max": 100
+            }
+        },
+        "anti_imm": {
+            "source": "V242547",
+            "nulls": [-1,-5,-6,-7,-9],
+            "valid": [1,2,3,4,5,6,7]
+        },
+        "college": {
+            "source": "V242548",
+            "nulls": [-1,-5,-6,-7,-9],
+            "mapping": {"4":1,"5":1,"1":0,"2":0,"3":0},
+            "valid": [0,1]
+        },
+        "no_guar_jobs": {
+            "source": "V242549",
+            "nulls": [-1,-5,-6,-7,-9],
+            "valid": [1,2,3,4,5,6,7]
+        },
+        "distrust_5pt": {
+            "source": "V242550",
+            "nulls": [-1,-5,-6,-7,-8, -9],
+            "valid": [1,2,3,4,5]
+        },
+        "special_favors_plus": {
+            "source": "V242300",
+            "nulls": [-1,-5,-6,-7,-8,-9],
+            "valid": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "source": "V242301",
+            "nulls": [-1,-5,-6,-7,-8,-9],
+            "valid": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "source": "V242302",
+            "nulls": [-1,-5,-6,-7,-8,-9],
+            "valid": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "source": "V242303",
+            "nulls": [-1,-5,-6,-7,-8,-9],
+            "valid": [1,2,3,4,5]
+        }
+    }
+}
