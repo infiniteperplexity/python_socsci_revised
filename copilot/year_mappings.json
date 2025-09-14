@@ -1,5 +1,6 @@
 {
     "2024": {
+        "caseid": "V240001",
         "weight": "V240107b",
         "age": "V241458x",
         "female": "V241550",
@@ -31,6 +32,7 @@
         "tried_harder_plus": "V242303"
     },
     "2020": {
+        "caseid": "V200001",
         "weight": "V200010b",
         "age": "V201507x",
         "female": "V201600",
@@ -62,6 +64,7 @@
         "tried_harder_plus": "V202303"
     },
     "2016": {
+        "caseid": "V160001",
         "weight": "V160102",
         "age": "V161267x",
         "female": "V161002",
@@ -92,6 +95,7 @@
         "tried_harder_plus": "V162214"
     },
     "2012": {
+        "caseid": "caseid",
         "weight": "weight_full",
         "age": "dem_age_r_x",
         "female": "gender_respondent_x",
@@ -122,6 +126,7 @@
         "tried_harder_plus": "resent_try"
     },
     "2008": {
+        "caseid": "V080001",
         "weight": "V080102",
         "age": "V083215x",
         "female": "V081101",
@@ -152,6 +157,7 @@
         "tried_harder_plus": "V085146"
     },
     "2004": {
+        "caseid": "V040001",
         "weight": "V040102",
         "age": "V043250",
         "female": "V041109a",
@@ -182,6 +188,7 @@
         "tried_harder_plus": "V045196"
     },
     "2000": {
+        "caseid": "V000001",
         "weight": "V000002a",
         "age": "V000908",
         "female": "V001029",

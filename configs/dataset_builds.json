@@ -175,7 +175,8 @@
                 "min": 0,
                 "max": 120
             }
-        }
+        },
+        "race": "V201549x"
     },
     "2016": {
         "_file_": "anes_timeseries_2016.dta",
@@ -213,7 +214,7 @@
     "2004": {
         "_file_": "anes2004TS.dta",
         "age": {
-            "source": "V043215x",
+            "source": "V043250",
             "nulls": [-2],
             "valid": {
                 "min": 0,
@@ -224,7 +225,7 @@
     "2000": {
         "_file_": "anes2000TS.dta",
         "age": {
-            "source": "V003215x",
+            "source": "V000908",
             "nulls": [-2],
             "valid": {
                 "min": 0,
