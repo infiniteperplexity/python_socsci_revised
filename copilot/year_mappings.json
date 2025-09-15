@@ -22,14 +22,17 @@
         "whites_influence": "V242526",
         "therm_trans": "V242151",
         "therm_police": "V242150",
-        "anti_imm": "V242547",
-        "college": "V242548",
+        "anti_imm": "V242227",
+        "college": "V241463",
         "no_guar_jobs": "V242549",
         "distrust_5pt": "V242550",
         "special_favors_plus": "V242300",
         "past_slavery_minus": "V242301",
         "less_deserve_minus": "V242302",
-        "tried_harder_plus": "V242303"
+        "tried_harder_plus": "V242303",
+        "self_assist_blacks": "V241255",
+        "dem_assist_blacks": "V241256",
+        "rep_assist_blacks": "V241257"
     },
     "2020": {
         "caseid": "V200001",
@@ -61,7 +64,10 @@
         "special_favors_plus": "V202300",
         "past_slavery_minus": "V202301",
         "less_deserve_minus": "V202302",
-        "tried_harder_plus": "V202303"
+        "tried_harder_plus": "V202303",
+        "self_assist_blacks": "V201258",
+        "dem_assist_blacks": "V201259",
+        "rep_assist_blacks": "V201260"
     },
     "2016": {
         "caseid": "V160001",
@@ -142,7 +148,7 @@
         "conservative": "V083069",
         "vote_rep_pres": "V085044a",
         "prev_rep_pres": "V083007a ",
-        "therm_blacks": "V085065a",
+        "therm_blacks": "V085064y",
         "therm_whites": "V084406c",
         "whites_influence": null,
         "therm_trans": null,

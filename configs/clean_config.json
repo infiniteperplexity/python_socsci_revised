@@ -43,6 +43,24 @@
             },
             "_valid_": [1,2,3]
         },
+        "blacks_influence": {
+            "_source_": "V001438",
+            "mapping": {
+                "1. TOO MUCH INFLUENCE": 1,
+                "2. JUST ABOUT THE RIGHT AMOUNT": 2,
+                "3. TOO LITTLE INFLUENCE": 3
+            },
+            "_valid_": [1,2,3]
+        },
+        "hispanics_influence": {
+            "_source_": "V001439",
+            "mapping": {
+                "1. TOO MUCH INFLUENCE": 1,
+                "2. JUST ABOUT THE RIGHT AMOUNT": 2,
+                "3. TOO LITTLE INFLUENCE": 3
+            },
+            "_valid_": [1,2,3]
+        },
         "party_7": {
             "_source_": "V000523",
             "mapping": {
@@ -56,6 +74,132 @@
                 "8. Apolitical (8,0,3 or 5,0,3/8/9 in E6,": 3
             },
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "V000510",
+            "mapping": {
+                "1. Increased a lot": 1,
+                "2. Increased a little": 2,
+                "3. Left the same": 3,
+                "4. Decreased a little": 4,
+                "5. Decreased a lot": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "V000913",
+            "mapping": {
+                "1. 8 grades or less and no diploma or eq": 0,
+                "2. 9-11 grades, no further schooling (in": 0,
+                "3. High school diploma or equivalency te": 0,
+                "4. More than 12 years of schooling, no h": 1,
+                "5. Junior or community college level deg": 1,
+                "6. BA level degrees. 17+ years, no advan": 2,
+                "7. Advanced degree, including LLB [13-17": 2
+            },
+            "_valid_": [0,1,2]
+        },
+        "self_assist_blacks": {
+            "_source_": "V000641",
+            "mapping": {
+                "1. GOVT SHOULD HELP BLACKS": 1,
+                "2.": 2,
+                "3.": 3,
+                "4.": 4,
+                "5.": 5,
+                "6.": 6,
+                "7. BLACKS SHOULD HELP THEMSELVES": 7
+            }
+        },
+        "dem_assist_blacks": {
+            "_source_": "V000651",
+            "mapping": {
+                "1. GOVT SHOULD HELP BLACKS": 1,
+                "2.": 2,
+                "3.": 3,
+                "4.": 4,
+                "5.": 5,
+                "6.": 6,
+                "7. BLACKS SHOULD HELP THEMSELVES": 7
+            }
+        },
+        "rep_assist_blacks": {
+            "_source_": "V000656",
+            "mapping": {
+                "1. GOVT SHOULD HELP BLACKS": 1,
+                "2.": 2,
+                "3.": 3,
+                "4.": 4,
+                "5.": 5,
+                "6.": 6,
+                "7. BLACKS SHOULD HELP THEMSELVES": 7
+            }
+        },
+        "therm_hisp": {
+            "_source_": "V001316",
+            "nulls": [
+                "995. NA",
+                "996. INAP, no Post interview",
+                "997. DON'T RECOGNIZE",
+                "998. DK WHERE TO RATE",
+                "999. RF"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "V001309",
+            "nulls": [
+                "995. NA",
+                "996. INAP, no Post interview",
+                "997. DON'T RECOGNIZE",
+                "998. DK WHERE TO RATE",
+                "999. RF"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "V001508",
+            "mapping": {
+                "1. AGREE STRONGLY": 1,
+                "2. AGREE SOMEWHAT": 2,
+                "3. NEITHER AGREE NOR DISAGREE": 3,
+                "4. DISAGREE SOMEWHAT": 4,
+                "5. DISAGREE STRONGLY": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "V001511",
+            "mapping": {
+                "1. AGREE STRONGLY": 1,
+                "2. AGREE SOMEWHAT": 2,
+                "3. NEITHER AGREE NOR DISAGREE": 3,
+                "4. DISAGREE SOMEWHAT": 4,
+                "5. DISAGREE STRONGLY": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "V001509",
+            "mapping": {
+                "1. AGREE STRONGLY": 1,
+                "2. AGREE SOMEWHAT": 2,
+                "3. NEITHER AGREE NOR DISAGREE": 3,
+                "4. DISAGREE SOMEWHAT": 4,
+                "5. DISAGREE STRONGLY": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "V001510",
+            "mapping": {
+                "1. AGREE STRONGLY": 1,
+                "2. AGREE SOMEWHAT": 2,
+                "3. NEITHER AGREE NOR DISAGREE": 3,
+                "4. DISAGREE SOMEWHAT": 4,
+                "5. DISAGREE STRONGLY": 5
+            },
+            "_valid_": [1,2,3,4,5]
         }
     },
     "2004": {
@@ -111,6 +255,138 @@
                 "8. Apolitical (5/./3-8-9 if apolitical)": 3
             },
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "V045115",
+            "mapping": {
+                "1. Increased a lot": 1,
+                "2. Increased a little": 2,
+                "3. Left the same as it is now": 3,
+                "4. Decreased a little": 4,
+                "5. Decreased a lot": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "V043254",
+            "mapping": {
+                "0. NA/DK number of grades; no HS diploma": 0,
+                "1. 8 grades or less and no diploma or equivalency": 0,
+                "2. 9-11 grades, no further schooling": 0,
+                "3. High school diploma or equivalency test": 0,
+                "4. More than 12 years of schooling, no higher degree": 0,
+                "5. Junior or community college level degrees": 1,
+                "6. BA level degrees; 17+ years, no advanced degree": 2,
+                "7. Advanced degree, including LLB": 2
+            },
+            "_valid_": [0, 1, 2]
+        },
+        "self_assist_blacks": {
+            "_source_": "V043158",
+            "mapping": {
+                "01. Govt should help blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "07. Blacks should help themselves": 7
+            }
+        },
+        "dem_assist_blacks": {
+            "_source_": "V043161",
+            "mapping": {
+                "01. Govt should help blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "07. Blacks should help themselves": 7
+            }
+        },
+        "rep_assist_blacks": {
+            "_source_": "V043160",
+            "mapping": {
+                "01. Govt should help blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "07. Blacks should help themselves": 7
+            }
+        },
+        "therm_hisp": {
+            "_source_": "V045056",
+            "nulls": [
+                "777. Don't recognize",
+                "888. Don't know where to rate",
+                "889. Refused"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_blacks": {
+            "_source_": "V045077",
+            "nulls": [
+                "777. Don't recognize",
+                "888. Don't know where to rate",
+                "889. Refused"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "V045086",
+            "nulls": [
+                "777. Don't recognize",
+                "888. Don't know where to rate",
+                "889. Refused"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "V045193",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "V045194",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "V045195",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "V045196",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
         }
     },
     "2008": {
@@ -143,12 +419,16 @@
             "_type_": "str"
         },
         "whites_influence": null,
-        "party_3_narrow": {
-            "source": "V083098x",
-            "mapping": {"1":"D","2":"D","3":"I","4":"I","5":"I","6":"R","7":"R"},
-            "type": "str",
-            "valid": ["D","I","R"]
+        "blacks_influence": {
+            "_source_": "V085114",
+            "mapping": {
+                "1. Too much influence": 1,
+                "3. Just about the right amount of influence": 2,
+                "5. Too little influence": 3
+            },
+            "_valid_": [1,2,3]
         },
+        "hispanics_influence": null,
         "party_7": {
             "_source_": "V083098x",
             "mapping": {
@@ -161,6 +441,140 @@
                 "6. Strong Republican (2;1;-1)": 7
             },
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "V085082",
+            "mapping": {
+                "1. Increased a lot": 1,
+                "2. Increased a little": 2,
+                "3. Left the same as it is now": 3,
+                "4. Decreased a little": 4,
+                "5. Decreased a lot": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "V083218x",
+            "mapping": {
+                "1. 0-8 grades - no HS diploma/equivalency [0-8 in Y3 and 5 in Y3a]": 0,
+                "2. 9-12 grades - no diploma/equivalency [9-12 in Y3 and 5 in Y3a]": 0,
+                "3. 0-12 grades - HS diploma/equivalency [0-12 in Y3 and 1 in Y3a]": 0,
+                "4. 13+ grades, no degree [0 in Y3b]": 1,
+                "5. Junior or community college level degrees (AA degrees) [7 in label define V083218xY3b]": 1,
+                "6. BA level degrees [6 in Y3b] or 17+ grades with no advanced label define V083218xdegree": 2,
+                "7. Advanced degree (including LLB) [2-6 in Y3b]": 2
+            },
+            "_valid_": [0, 1, 2]
+        },
+        "self_assist_blacks": {
+            "_source_": "V083137",
+            "mapping": {
+                "1. Govt should help blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "dem_assist_blacks": {
+            "_source_": "V083139a",
+            "mapping": {
+                "1. Govt should help blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "rep_assist_blacks": {
+            "_source_": "V083139b",
+            "mapping": {
+                "1. Govt should help blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "therm_hisp": {
+            "_source_": "V085064a",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know ('don't know where to rate')",
+                "-6. Thermometer: 'don't know who this is'",
+                "-2. No Post-election IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_blacks": {
+            "_source_": "V085064y",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know ('don't know where to rate')",
+                "-6. Thermometer: 'don't know who this is'",
+                "-2. No Post-election IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "V085065c",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know ('don't know where to rate')",
+                "-6. Thermometer: 'don't know who this is'",
+                "-2. No Post-election IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "V085143",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "V085144",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "V085145",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "V085146",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
         }
     },
     "2012": {
@@ -203,11 +617,23 @@
             },
             "_valid_": [1,2,3]
         },
-        "party_3_narrow": {
-            "_source_": "pid_x",
-            "mapping": {"1":"D","2":"D","3":"I","4":"I","5":"I","6":"R","7":"R"},
-            "type": "str",
-            "valid": ["D","I","R"]
+        "blacks_influence": {
+            "_source_": "racecasi_infblacks",
+            "mapping": {
+                "1. Too much influence": 1,
+                "2. Just about the right amount of influence": 2,
+                "3. Too little influence": 3
+            },
+            "_valid_": [1,2,3]
+        },
+        "hispanics_influence": {
+            "_source_": "racecasi_infhisp",
+            "mapping": {
+                "1. Too much influence": 1,
+                "2. Just about the right amount of influence": 2,
+                "3. Too little influence": 3
+            },
+            "_valid_": [1,2,3]
         },
         "party_7": {
             "_source_": "pid_x",
@@ -221,6 +647,149 @@
                 "7. Strong Republican": 7
             },
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "immigpo_level",
+            "mapping": {
+                "1. Increased a lot": 1,
+                "2. Increased a little": 2,
+                "3. Left the same as it is now": 3,
+                "4. Decreased a little": 4,
+                "5. Decreased a lot": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "dem_edu",
+            "mapping": {
+                "01. Less than 1st grade": 0,
+                "02. 1st, 2nd, 3rd or 4th grade": 0,
+                "03. 5th or 6th grade": 0,
+                "04. 7th or 8th grade": 0,
+                "05. 9th grade": 0,
+                "06. 10th grade": 0,
+                "07. 11th grade": 0,
+                "08. 12th grade no diploma": 0,
+                "09. High school graduate- high school diploma or equivalent (for example: ged)": 0,
+                "10. Some college but no degree": 1,
+                "11. Associate degree in college - occupational/vocational program": 1,
+                "12. Associate degree in college -- academic program": 1,
+                "13. Bachelor's degree (for example: ba, ab, bs)": 2,
+                "14. Master's degree (for example: ma, ms, meng, med, msw, mba)": 2,
+                "15. Professional school degree (for example: md,dds,dvm,llb,jd)": 2,
+                "16. Doctorate degree (for example: phd, edd)": 2
+            },
+            "_valid_": [0, 1, 2]
+        },
+        "self_assist_blacks": {
+            "_source_": "aidblack_self",
+            "mapping": {
+                "1. Govt should help Blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "dem_assist_blacks": {
+            "_source_": "aidblack_dpc",
+            "mapping": {
+                "1. Govt should help Blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "rep_assist_blacks": {
+            "_source_": "aidblack_rpc",
+            "mapping": {
+                "1. Govt should help Blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "therm_hisp": {
+            "_source_": "ftcasi_hisp",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know",
+                "-7. Deleted due to partial (post-election) interview",
+                "-6. Not asked, unit nonresponse (no post-election interview)"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_blacks": {
+            "_source_": "ftcasi_black",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know",
+                "-7. Deleted due to partial (post-election) interview",
+                "-6. Not asked, unit nonresponse (no post-election interview)"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "ftcasi_white",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know",
+                "-7. Deleted due to partial (post-election) interview",
+                "-6. Not asked, unit nonresponse (no post-election interview)"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "resent_workway",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "resent_slavery",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "resent_deserve",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "resent_try",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
         }
     },
     "2016": {
@@ -263,11 +832,23 @@
             },
             "_valid_": [1,2,3]
         },
-        "party_3_narrow": {
-            "source": "V161158x",
-            "mapping": {"1":"D","2":"D","3":"I","4":"I","5":"I","6":"R","7":"R"},
-            "type": "str",
-            "valid": ["D","I","R"]
+        "blacks_influence": {
+            "_source_": "V162323",
+            "mapping": {
+                "1. Too much influence": 1,
+                "2. Just about the right amount of influence": 2,
+                "3. Too little influence": 3
+            },
+            "_valid_": [1,2,3]
+        },
+        "hispanics_influence": {
+            "_source_": "V162324",
+            "mapping": {
+                "1. Too much influence": 1,
+                "2. Just about the right amount of influence": 2,
+                "3. Too little influence": 3
+            },
+            "_valid_": [1,2,3]
         },
         "party_7": {
             "_source_": "V161158x",
@@ -281,6 +862,149 @@
                 "7. Strong Republican": 7
             },
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "V162157",
+            "mapping": {
+                "1. Increased a lot": 1,
+                "2. Increased a little": 2,
+                "3. Left the same as it is now": 3,
+                "4. Decreased a little": 4,
+                "5. Decreased a lot": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "V161270",
+            "mapping": {
+                "1. Less than 1st grade": 0,
+                "2. 1st, 2nd, 3rd or 4th grade": 0,
+                "3. 5th or 6th grade": 0,
+                "4. 7th or 8th grade": 0,
+                "5. 9th grade": 0,
+                "6. 10th grade": 0,
+                "7. 11th grade": 0,
+                "8. 12th grade no diploma": 0,
+                "9. High school graduate- high school diploma or equivalent (for example: GED)": 0,
+                "10. Some college but no degree": 1,
+                "11. Associate degree in college - occupational/vocational program": 1,
+                "12. Associate degree in college -- academic program": 1,
+                "13. Bachelor's degree (for example: BA, AB, BS)": 2,
+                "14. Master's degree (for example: MA, MS, MENG, MED, MSW, MBA)": 2,
+                "15. Professional school degree (for example: MD, DDS, DVM, LLB, JD)": 2,
+                "16. Doctorate degree (for example: PHD, EDD)": 2
+            },
+            "_valid_": [0, 1, 2]
+        },
+        "self_assist_blacks": {
+            "_source_": "V161198",
+            "mapping": {
+                "1. Govt should help Blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "dem_assist_blacks": {
+            "_source_": "V161199",
+            "mapping": {
+                "1. Govt should help Blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "rep_assist_blacks": {
+            "_source_": "V161200",
+            "mapping": {
+                "1. Govt should help Blacks": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Blacks should help themselves": 7
+            }
+        },
+        "therm_hisp": {
+            "_source_": "V162311",
+            "nulls": [
+                "-9. Refused",
+                "-7. No post data, deleted due to incomplete IW",
+                "-6. No post-election interview",
+                "-5. Breakoff, sufficient partial IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_blacks": {
+            "_source_": "V162312",
+            "nulls": [
+                "-9. Refused",
+                "-7. No post data, deleted due to incomplete IW",
+                "-6. No post-election interview",
+                "-5. Breakoff, sufficient partial IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "V162314",
+            "nulls": [
+                "-9. Refused",
+                "-7. No post data, deleted due to incomplete IW",
+                "-6. No post-election interview",
+                "-5. Breakoff, sufficient partial IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "V162211",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "V162212",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "V162213",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "V162214",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
         }
     },
     "2020": {
@@ -312,10 +1036,89 @@
             "keep": [1,2,3],
             "_valid_": [1,2,3]
         },
+        "blacks_influence": {
+            "_source_": "V202495",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
+        },
+        "hispanics_influence": {
+            "_source_": "V202496",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
+        },
         "party_7": {
             "_source_": "V201231x",
             "keep": [1,2,3,4,5,6,7],
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "V202232",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "V201510",
+            "mapping": {
+                "1": 0,
+                "2": 0,
+                "3": 1,
+                "4": 1,
+                "5": 1,
+                "6": 2,
+                "7": 2,
+                "8": 2
+            },
+            "_valid_": [0, 1, 2]
+        },
+        "self_assist_blacks": {
+            "_source_": "V201258",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_assist_blacks": {
+            "_source_": "V201259",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_assist_blacks": {
+            "_source_": "V201259",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "therm_hisp": {
+            "_source_": "V202479",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_blacks": {
+            "_source_": "V202480",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "V202482",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "V202300",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "V202301",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "V202302",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "V202303",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
         }
     },
     "2024": {
@@ -344,10 +1147,97 @@
             "keep": [1,2,3],
             "_valid_": [1,2,3]
         },
+        "blacks_influence": {
+            "_source_": "V242527",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
+        },
+        "hispanics_influence": {
+            "_source_": "V242528",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
+        },
         "party_7": {
             "_source_": "V241227x",
             "keep": [1,2,3,4,5,6,7],
             "_valid_": [1,2,3,4,5,6,7]
+        },
+        "less_immig": {
+            "_source_": "V242227",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "college_3": {
+            "_source_": "V241463",
+            "mapping": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 1,
+                "11": 1,
+                "12": 1,
+                "13": 2,
+                "14": 2,
+                "15": 2,
+                "16": 2
+            },
+            "_valid_": [0, 1, 2]
+        },
+        "self_assist_blacks": {
+            "_source_": "V241255",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_assist_blacks": {
+            "_source_": "V241256",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_assist_blacks": {
+            "_source_": "V241257",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "therm_hisp": {
+            "_source_": "V242515",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_blacks": {
+            "_source_": "V242516",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_whites": {
+            "_source_": "V242518",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_plus": {
+            "_source_": "V242300",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "past_slavery_minus": {
+            "_source_": "V242301",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "less_deserve_minus": {
+            "_source_": "V242302",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "tried_harder_plus": {
+            "_source_": "V242303",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
         }
     }
 }
