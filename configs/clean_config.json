@@ -146,6 +146,17 @@
             ],
             "_valid_": {"min": 0, "max": 100}
         },
+        "therm_blacks": {
+            "_source_": "V001308",
+            "nulls": [
+                "995. NA",
+                "996. INAP, no Post interview",
+                "997. DON'T RECOGNIZE",
+                "998. DK WHERE TO RATE",
+                "999. RF"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
         "therm_whites": {
             "_source_": "V001309",
             "nulls": [
@@ -157,7 +168,7 @@
             ],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "special_favors_minus": {
             "_source_": "V001508",
             "mapping": {
                 "1. AGREE STRONGLY": 1,
@@ -168,7 +179,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "V001511",
             "mapping": {
                 "1. AGREE STRONGLY": 1,
@@ -179,7 +190,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "V001509",
             "mapping": {
                 "1. AGREE STRONGLY": 1,
@@ -190,7 +201,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "V001510",
             "mapping": {
                 "1. AGREE STRONGLY": 1,
@@ -200,6 +211,45 @@
                 "5. DISAGREE STRONGLY": 5
             },
             "_valid_": [1,2,3,4,5]
+        },
+        "vote_rep_pres": {
+            "_source_": "V001249",
+            "mapping": {
+                "1. AL GORE": 0,
+                "3. GEORGE W. BUSH": 1
+            },
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "V000304",
+            "mapping": {
+                "1. BILL CLINTON": 0,
+                "3. BOB DOLE": 1
+            },
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "V001575",
+            "mapping": {
+                "1. HARDWORKNG": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. LAZY": 7
+            },
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "V000806",
+            "mapping": {
+                "1. Favor strongly": 1,
+                "2. Favor not strongly": 2,
+                "4. Oppose not strongly": 4,
+                "5. Oppose strongly": 5
+            },
+            "_valid_": [1,2,4,5]
         }
     },
     "2004": {
@@ -344,7 +394,16 @@
             ],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "therm_illegal": {
+            "_source_": "V045081",
+            "nulls": [
+                "777. Don't recognize",
+                "888. Don't know where to rate",
+                "889. Refused"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_minus": {
             "_source_": "V045193",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -355,7 +414,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "V045194",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -366,7 +425,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "V045195",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -377,13 +436,74 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "V045196",
             "mapping": {
                 "1. Agree strongly": 1,
                 "2. Agree somewhat": 2,
                 "3. Neither agree nor disagree": 3,
                 "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "vote_rep_pres": {
+            "_source_": "V045026",
+            "mapping": {
+                "1. John Kerry": 0,
+                "3. George W. Bush": 1
+            },
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "V043003",
+            "mapping": {
+                "1. Al Gore": 0,
+                "3. George W. Bush": 1
+            },
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "V045223",
+            "mapping": {
+                "1. Hard-working": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Lazy": 7
+            },
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "V045207a",
+            "mapping": {
+                "1. Favor strongly": 1,
+                "2. Favor not strongly": 2,
+                "4. Oppose not strongly": 4,
+                "5. Oppose strongly ": 5
+            },
+            "_valid_": [1,2,4,5]
+        },
+        "women_favors": {
+            "_source_": "V045183",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_problems": {
+            "_source_": "V045185",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
                 "5. Disagree strongly": 5
             },
             "_valid_": [1,2,3,4,5]
@@ -532,7 +652,17 @@
             ],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "therm_illegal": {
+            "_source_": "V085065a",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know ('don't know where to rate')",
+                "-6. Thermometer: 'don't know who this is'",
+                "-2. No Post-election IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_minus": {
             "_source_": "V085143",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -543,7 +673,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "V085144",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -554,7 +684,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "V085145",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -565,8 +695,67 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "V085146",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "vote_rep_pres": {
+            "_source_": "V085044a",
+            "mapping": {
+                "1. Barack Obama": 0,
+                "3. John McCain": 1
+            },
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "V083007a",
+            "mapping": {
+                "1. John Kerry": 0,
+                "3. George W. Bush": 1
+            },
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "V083207b",
+            "mapping": {
+                "1. Hard-working": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Lazy": 7
+            },
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "V085157",
+            "mapping": {
+                "1. For preferential hiring and promotion of blacks": 1,
+                "5. Against preferential hiring and promotion of blacks": 5
+            },
+            "_valid_": [1,2,4,5]
+        },
+        "women_favors": {
+            "_source_": "V085136",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree Somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree Somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_problems": {
+            "_source_": "V085138",
             "mapping": {
                 "1. Agree strongly": 1,
                 "2. Agree Somewhat": 2,
@@ -747,7 +936,17 @@
             ],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "therm_illegal": {
+            "_source_": "ftcasi_illegal",
+            "nulls": [
+                "-9. Refused",
+                "-8. Don't know",
+                "-7. Deleted due to partial (post-election) interview",
+                "-6. Not asked, unit nonresponse (no post-election interview)"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_minus": {
             "_source_": "resent_workway",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -758,7 +957,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "resent_slavery",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -769,7 +968,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "resent_deserve",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -780,7 +979,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "resent_try",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -788,6 +987,67 @@
                 "3. Neither agree nor disagree": 3,
                 "4. Disagree somewhat": 4,
                 "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "vote_rep_pres": {
+            "_source_": "presvote2012_x",
+            "mapping": {
+                "1. Barack obama": 0,
+                "2. Mitt romney": 1
+            },
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "interest_whovote2008",
+            "mapping": {
+                "1. Barack obama": 0,
+                "2. John mccain": 1
+            },
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "stype_hwkblack",
+            "mapping": {
+                "1. Hard-working": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7.lazy": 7
+            },
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "aapost_hire_x",
+            "mapping": {
+                "1. Strongly for preferential hiring and promotion of Blacks": 1,
+                "2. Not strongly for preferential hiring and promotion of Blacks": 2,
+                "4. Not strongly against preferential hiring and promotion of Blacks": 4,
+                "5. Strongly against preferential hiring and promotion of Blacks": 5
+            },
+            "_valid_": [1,2,4,5]
+        },
+        "women_favors": {
+            "_source_": "modsex_special",
+            "mapping": {
+                "1. Never": 1,
+                "2. Some of the time": 2,
+                "3. About half the time": 3,
+                "4. Most of the time": 4,
+                "5. Always": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_problems": {
+            "_source_": "modsex_prob",
+            "mapping": {
+                "1. Never": 1,
+                "2. Some of the time": 2,
+                "3. About half the time": 3,
+                "4. Most of the time": 4,
+                "5. Always": 5
             },
             "_valid_": [1,2,3,4,5]
         }
@@ -962,7 +1222,42 @@
             ],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "therm_illegal": {
+            "_source_": "V162313",
+            "nulls": [
+                "-9. Refused",
+                "-7. No post data, deleted due to incomplete IW",
+                "-6. No post-election interview",
+                "-5. Breakoff, sufficient partial IW"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_police": {
+            "_source_": "V162110",
+            "nulls": [
+                "-9. Refused",
+                "-7. No post data, deleted due to incomplete IW",
+                "-6. No post-election interview",
+                "-5. Breakoff, sufficient partial IW",
+                "998. Don't know (where to rate)",
+                "999. Don't recognize (don't know who this is)"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_trans": {
+            "_source_": "V162111",
+            "nulls": [
+                "-9. Refused",
+                "-7. No post data, deleted due to incomplete IW",
+                "-6. No post-election interview",
+                "-5. Breakoff, sufficient partial IW",
+                "998. Don't know (where to rate)",
+                "999. Don't recognize (don't know who this is)"
+            ],
+            "_valid_": {"min": 0, "max": 100}
+        },
+    
+        "special_favors_minus": {
             "_source_": "V162211",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -973,7 +1268,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "V162212",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -984,7 +1279,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "V162213",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -995,7 +1290,7 @@
             },
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "V162214",
             "mapping": {
                 "1. Agree strongly": 1,
@@ -1003,6 +1298,106 @@
                 "3. Neither agree nor disagree": 3,
                 "4. Disagree somewhat": 4,
                 "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "vote_rep_pres": {
+            "_source_": "V162034a",
+            "mapping": {
+                "1. Hillary Clinton": 0,
+                "2. Donald Trump": 1
+            },
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "V161006",
+            "mapping": {
+                "1. Barack Obama": 0,
+                "2. Mitt Romney": 1
+            },
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "V162346",
+            "mapping": {
+                "1. Hard-working": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7. Lazy": 7
+            },
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "V162238x",
+            "mapping": {
+                "1. Strongly for preferential hiring": 1,
+                "2. Not strongly for preferential hiring": 2,
+                "4. Not strongly against preferential hiring": 4,
+                "5. Strongly against preferential hiring": 5
+            },
+            "_valid_": [1,2,4,5]
+        },
+        "police_blacks_better_3": {
+            "_source_": "V162320",
+            "mapping": {
+                "1. Treat whites better": 1,
+                "2. Treat both the same": 2,
+                "3. Treat blacks better": 3
+            }
+        },
+        "police_blacks_better_degree": {
+            "_source_": "V162321",
+            "mapping": {
+                "1. Much": 1,
+                "2. Moderately": 2,
+                "3. A little": 3
+            }
+        },
+        "trans_bath": {
+            "_source_": "V161228x",
+            "mapping": {
+                "1. Feel very strongly- bathroom of the gender born with": 1,
+                "2. Feel moderately strongly- bathroom of the gender born with": 2,
+                "3. Feel a little strongly- bathroom of the gender born with": 3,
+                "4. Feel a little strongly - bathroom of identified gender": 4,
+                "5. Feel moderately strongly - bathroom of identified gender": 5,
+                "6. Feel very strongly - bathroom of identified gender": 6
+            },
+            "_valid_": [1,2,3,4,5,6]
+        },
+        "immig_crime": {
+            "_source_": "V162270",
+            "mapping": {
+                "1. Agree strongly": 1,
+                "2. Agree somewhat": 2,
+                "3. Neither agree nor disagree": 3,
+                "4. Disagree somewhat": 4,
+                "5. Disagree strongly": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_favors": {
+            "_source_": "V162232",
+            "mapping": {
+                "1. Always": 1,
+                "2. Most of the time": 2,
+                "3. About half the time": 3,
+                "4. Some of the time": 4,
+                "5. Never": 5
+            },
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_problems": {
+            "_source_": "V162233",
+            "mapping": {
+                "1. Always": 1,
+                "2. Most of the time": 2,
+                "3. About half the time": 3,
+                "4. Some of the time": 4,
+                "5. Never": 5
             },
             "_valid_": [1,2,3,4,5]
         }
@@ -1081,7 +1476,7 @@
             "_valid_": [1,2,3,4,5,6,7]
         },
         "rep_assist_blacks": {
-            "_source_": "V201259",
+            "_source_": "V201260",
             "keep": [1,2,3,4,5,6,7],
             "_valid_": [1,2,3,4,5,6,7]
         },
@@ -1100,23 +1495,88 @@
             "nulls": [-1,-4,-5,-6,-7,-9],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "therm_illegal": {
+            "_source_": "V202481",
+            "nulls": [-1,-4,-5,-6,-7,-9],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_police": {
+            "_source_": "V202171",
+            "nulls": [-1,-4,-5,-6,-7,-9, 998, 999],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_trans": {
+            "_source_": "V202172",
+            "nulls": [-1,-4,-5,-6,-7,-9, 998, 999],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_minus": {
             "_source_": "V202300",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "V202301",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "V202302",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "V202303",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+         "vote_rep_pres": {
+            "_source_": "V202073",
+            "mapping": {"1": 0, "2": 1},
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "V201103",
+            "mapping": {"1": 0, "2": 1},
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "V202516",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "V202252x",
+            "mapping": {
+                "1": 1,
+                "2": 2,
+                "3": 4,
+                "4": 5
+            },
+            "_valid_": [1,2,4,5]
+        },
+        "police_blacks_better_7": {
+            "_source_": "V202493x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "trans_bath": {
+            "_source_": "V201411x",
+            "keep": [1,2,3,4,5,6],
+            "_valid_": [1,2,3,4,5,6]
+        },
+        "immig_crime": {
+            "_source_": "V202239x",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_favors": {
+            "_source_": "V202291",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_problems": {
+            "_source_": "V202292",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         }
@@ -1206,36 +1666,109 @@
         },
         "therm_hisp": {
             "_source_": "V242515",
-            "nulls": [-1,-4,-5,-6,-7,-9],
+            "nulls": [-1,-4,-5,-6,-7,-9, 200],
             "_valid_": {"min": 0, "max": 100}
         },
         "therm_blacks": {
             "_source_": "V242516",
-            "nulls": [-1,-4,-5,-6,-7,-9],
+            "nulls": [-1,-4,-5,-6,-7,-9, 200],
             "_valid_": {"min": 0, "max": 100}
         },
         "therm_whites": {
             "_source_": "V242518",
-            "nulls": [-1,-4,-5,-6,-7,-9],
+            "nulls": [-1,-4,-5,-6,-7,-9, 200],
             "_valid_": {"min": 0, "max": 100}
         },
-        "special_favors_plus": {
+        "therm_illegal": {
+            "_source_": "V242517",
+            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_police": {
+            "_source_": "V242150",
+            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_trans": {
+            "_source_": "V241719",
+            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "special_favors_minus": {
             "_source_": "V242300",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         },
-        "past_slavery_minus": {
+        "past_slavery_plus": {
             "_source_": "V242301",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         },
-        "less_deserve_minus": {
+        "less_deserve_plus": {
             "_source_": "V242302",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         },
-        "tried_harder_plus": {
+        "tried_harder_minus": {
             "_source_": "V242303",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "vote_rep_pres": {
+            "_source_": "V242067",
+            "mapping": {"1": 0,"2": 1},
+            "_valid_": [0,1]
+        },
+        "prev_rep_pres": {
+            "_source_": "V241104",
+            "mapping": {"1": 0,"2": 1},
+            "_valid_": [0,1]
+        },
+        "blacks_hardworking": {
+            "_source_": "V242542",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "blacks_hiring": {
+            "_source_": "V242241x",
+            "mapping": {
+                "1": 1,
+                "2": 2,
+                "3": 4,
+                "4": 5
+            },
+            "_valid_": [1,2,4,5]
+        },
+        "police_blacks_better_7": {
+            "_source_": "V242525x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "trans_bath": {
+            "_source_": "V241372x",
+            "mapping": {
+                "1": 6,
+                "2": 5,
+                "3": 4,
+                "4": 3.5,
+                "5": 3,
+                "6": 2,
+                "7": 1
+            },
+            "_valid_": [1,2,3,3.5,4,5,6]
+        },
+        "immig_crime": {
+            "_source_": "V242231x",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_favors": {
+            "_source_": "V242280",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "women_problems": {
+            "_source_": "V242281",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
         }
