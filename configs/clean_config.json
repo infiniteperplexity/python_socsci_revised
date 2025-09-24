@@ -250,6 +250,14 @@
                 "5. Oppose strongly": 5
             },
             "_valid_": [1,2,4,5]
+        },
+        "female": {
+            "_source_": "V001029",
+            "mapping": {
+                "1. MALE": 0,
+                "2. FEMALE": 1
+            },
+            "_valid_": [0,1]
         }
     },
     "2004": {
@@ -507,6 +515,14 @@
                 "5. Disagree strongly": 5
             },
             "_valid_": [1,2,3,4,5]
+        },
+        "female": {
+            "_source_": "V043411",
+            "mapping": {
+                "1. Male": 0,
+                "2. Female": 1
+            },
+            "_valid_": [0,1]
         }
     },
     "2008": {
@@ -764,6 +780,14 @@
                 "5. Disagree strongly": 5
             },
             "_valid_": [1,2,3,4,5]
+        },
+        "female": {
+            "_source_": "V081101",
+            "mapping": {
+                "1. Male respondent selected": 0,
+                "2. Female respondent selected": 1
+            },
+            "_valid_": [0,1]
         }
     },
     "2012": {
@@ -1050,6 +1074,14 @@
                 "5. Always": 5
             },
             "_valid_": [1,2,3,4,5]
+        },
+        "female": {
+            "_source_": "gender_respondent_x",
+            "mapping": {
+                "1. Male": 0,
+                "2. Female": 1
+            },
+            "_valid_": [0,1]
         }
     },
     "2016": {
@@ -1400,6 +1432,14 @@
                 "5. Never": 5
             },
             "_valid_": [1,2,3,4,5]
+        },
+        "female": {
+            "_source_": "V161342",
+            "mapping": {
+                "1. Male": 0,
+                "2. Female": 1
+            },
+            "_valid_": [0,1]
         }
     },
     "2020": {
@@ -1579,6 +1619,11 @@
             "_source_": "V202292",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
+        },
+        "female": {
+            "_source_": "V201004",
+            "mapping": {"1": 0, "2": 1},
+            "_valid_": [0,1]
         }
     },
     "2024": {
@@ -1771,6 +1816,26 @@
             "_source_": "V242281",
             "keep": [1,2,3,4,5],
             "_valid_": [1,2,3,4,5]
+        },
+        "female": {
+            "_source_": "V241550",
+            "mapping": {"1":0,"2":1},
+            "_valid_": [0,1]
+        },
+        "no_guar_jobs": {
+            "_source_": "V242549",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "distrust_5pt": {
+            "_source_": "V242550",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "economy_worse": {
+            "_source_": "V242551",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
         }
     }
 }
