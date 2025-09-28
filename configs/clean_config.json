@@ -1731,12 +1731,12 @@
         },
         "therm_police": {
             "_source_": "V242150",
-            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "nulls": [-1,-4,-5,-6,-7, -8, -9, 200, 998, 999],
             "_valid_": {"min": 0, "max": 100}
         },
         "therm_trans": {
             "_source_": "V241719",
-            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "nulls": [-1,-4,-5,-6,-7, -8, -9, 200, 998, 999],
             "_valid_": {"min": 0, "max": 100}
         },
         "special_favors_minus": {
@@ -1852,11 +1852,6 @@
             "keep": [1,2,3,4,5,6,7],
             "_valid_": [1,2,3,4,5,6,7]
         },
-        "health_private": {
-            "_source_": "V241245",
-            "keep": [1,2,3,4,5,6,7],
-            "_valid_": [1,2,3,4,5,6,7]
-        },
         "environ_business": {
             "_source_": "V241258",
             "keep": [1,2,3,4,5,6,7],
@@ -1933,7 +1928,8 @@
                 "26": "26. $150,000-174,999",
                 "27": "27. $175,000-249,999",
                 "28": "28. $250,000 or more"
-            }
+            },
+            "_type_": "str"
         },
         "just_violence": {
             "_source_": "V241579",
@@ -1960,12 +1956,12 @@
         },
         "therm_feminists": {
             "_source_": "V242138",
-            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "nulls": [-1,-4,-5,-6,-7,-8, -9, 200, 998, 999],
             "_valid_": {"min": 0, "max": 100}
         },
         "therm_maga": {
             "_source_": "V242148",
-            "nulls": [-1,-4,-5,-6,-7,-9, 200],
+            "nulls": [-1,-4,-5,-6,-7, -8,-9, 200, 998, 999],
             "_valid_": {"min": 0, "max": 100}
         },
         "no_tariffs": {
@@ -2077,6 +2073,291 @@
             "_source_": "V242577e",
             "keep": [0,1],
             "_valid_": [0,1]
+        },
+        "inattention_politics": {
+            "_source_": "V241004",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "uninterest_campaigns": {
+            "_source_": "V241005",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
+        },
+        "vote_in_primary": {
+            "_source_": "V241031",
+            "mapping": {"1": -1, "2": 1, "3": 0},
+            "_valid_": [-1,0,1]
+        },
+        "vote_prez_strong": {
+            "_source_": "V241044",
+            "mapping": {"1": 1, "2": 0},
+            "_valid_": [0,1]
+        },
+        "outrage": {
+            "_source_": "V241120",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "disapprove_prez_econ": {
+            "_source_": "V241143x",
+            "keep": [1,2,3,4],
+            "_valid_": [1,2,3,4]
+        },
+        "disapprove_prez_immig": {
+            "_source_": "V241152x",
+            "keep": [1,2,3,4],
+            "_valid_": [1,2,3,4]
+        },
+        "disapprove_prez_crime": {
+            "_source_": "V241155x",
+            "keep": [1,2,3,4],
+            "_valid_": [1,2,3,4]
+        },
+        "therm_democrat": {
+            "_source_": "V241166",
+            "nulls": [-1,-4,-5,-6,-7, -8, -9, 998, 999],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "therm_republican": {
+            "_source_": "V241167",
+            "nulls": [-1,-4,-5,-6,-7, -8, -9, 998, 999],
+            "_valid_": {"min": 0, "max": 100}
+        },
+        "any_like_democrat": {
+            "_source_": "V241169",
+            "mapping": {"1": 1, "2": 0},
+            "_valid_": [0,1]
+        },
+        "any_dislike_democrat": {
+            "_source_": "V241171",
+            "mapping": {"1": 1, "2": 0},
+            "_valid_": [0,1]
+        },
+        "any_like_republican": {
+            "_source_": "V241173",
+            "mapping": {"1": 1, "2": 0},
+            "_valid_": [0,1]
+        },
+        "any_dislike_republican": {
+            "_source_": "V241175",
+            "mapping": {"1": 1, "2": 0},
+            "_valid_": [0,1]
+        },
+        "libcon_dem_prez": {
+            "_source_": "V241179",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "libcon_rep_prez": {
+            "_source_": "V241180",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "libcon_dem_party": {
+            "_source_": "V241183",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "libcon_rep_party": {
+            "_source_": "V241184",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "vote_duty_choice": {
+            "_source_": "V241218x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "distrust_gov": {
+            "_source_": "V241229",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "gov_benefit_people": {
+            "_source_": "V241231",
+            "keep": [1,2],
+            "_valid_": [1,2]
+        },
+        "gov_not_corrupt": {
+            "_source_": "V241233",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "gop_better_economy": {
+            "_source_": "V241236",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "gop_better_immig": {
+            "_source_": "V241237",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "gop_better_environ": {
+            "_source_": "V241238",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "no_gov_attent_elect": {
+            "_source_": "V241235",
+            "keep": [1,2,3],
+            "_valid_": [1,2,3]
+        },
+        "self_more_services": {
+            "_source_": "V241239",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_more_services": {
+            "_source_": "V241240",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_more_services": {
+            "_source_": "V241241",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "self_health_private": {
+            "_source_": "V241245",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_health_private": {
+            "_source_": "V241246",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_health_private": {
+            "_source_": "V241247",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "self_abortion": {
+            "_source_": "V241248",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_abortion": {
+            "_source_": "V241250",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_abortion": {
+            "_source_": "V241251",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "self_no_gov_jobs": {
+            "_source_": "V241252",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_no_gov_jobs": {
+            "_source_": "V241253",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_no_gov_jobs": {    
+            "_source_": "V241254",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "self_env_business": {
+            "_source_": "V241258",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "dem_env_business": {
+            "_source_": "V241259",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "rep_env_business": {
+            "_source_": "V241260",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "votes_accurate_2024": {
+            "_source_": "V241314",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "trust_election_officials": {
+            "_source_": "V241315",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "often_denied_vote": {
+            "_source_": "V241316",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "oppose_voter_id": {
+            "_source_": "V241319x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "important_free_press": {
+            "_source_": "V241324",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "important_separ_pows": {
+            "_source_": "V241325",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "important_basic_facts": {
+            "_source_": "V241326",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "harmful_prez_not_worry": {
+            "_source_": "V241330x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "oppose_restrict_journal": {
+            "_source_": "V241333x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "concern_undermine_media": {
+            "_source_": "V241334",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "trust_news": {
+            "_source_": "V241335",
+            "keep": [1,2,3,4,5],
+            "_valid_": [1,2,3,4,5]
+        },
+        "oppose_paid_leave": {
+            "_source_": "V241369x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "immig_policy_lenient": {
+            "_source_": "V241386",
+            "keep": [1,2,3,4],
+            "_valid_": [1,2,3,4]
+        },
+        "oppose_end_birthright": {
+            "_source_": "V241389x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "immig_children_stay": {
+            "_source_": "V241392x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
+        },
+        "oppose_build_wall": {
+            "_source_": "V241395x",
+            "keep": [1,2,3,4,5,6,7],
+            "_valid_": [1,2,3,4,5,6,7]
         }
     }
 }
